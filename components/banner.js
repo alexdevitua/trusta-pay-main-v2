@@ -59,6 +59,8 @@ export default function Banner() {
         </h1>
       </div>
 
+      <span className="hidden transform rotate-0 rotate-90 rotate-180 rotate-270 rotate-360 -rotate-180 -rotate-90 "></span>
+
       <div className="relative w-full h-auto my-10">
 
         <div className="w-56 h-56 mx-auto relative">

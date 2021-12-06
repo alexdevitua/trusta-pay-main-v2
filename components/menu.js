@@ -9,7 +9,7 @@ export default function Menu() {
     return (
         <>
             <button className="float-right md:hidden">
-                <button className="float-right p-2 md:hidden appearance-none outline-none focus:outline-none " onClick={() => setShowMenu(!showMenu)}>
+                <button className="float-right p-2 md:hidden appearance-none outline-none focus:outline-none " onClick={() => setShowMenu(!showMenu)} aria-label="Menu">
                     <svg xmlns="http://www.w3.org/2000/svg" className={`h-8 w-8 ${showMenu ? 'hidden' : 'block'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
@@ -21,7 +21,7 @@ export default function Menu() {
 
             <div className={`transition duration-700 ease-in-out z-50  min-h-full max-w-full w-full h-auto absolute bg-black bg-opacity-80  ${showMenu ? 'block top-0 right-0 bottom-0' : 'hidden right-full'} transition `}
                 onClick={() => setShowMenu(!showMenu)}>
-                <div className={`w-80 min-h-screen h-full bg-gray-200 float-right relative p-5`}>
+                <div className={`w-80 min-h-screen h-auto bg-gray-200 float-right relative p-5`}>
                     <button
                         className="absolute top-3 right-3 rounded-full bg-black p-1"
                         onClick={() => setShowMenu(false)}
